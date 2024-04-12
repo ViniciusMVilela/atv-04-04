@@ -1,20 +1,3 @@
-function coletaDataDeAcesso() {
-  const options = {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-  };
-
-  const dataFormatada = new Intl.DateTimeFormat("pt-BR", options).format(
-    new Date()
-  );
-
-  return dataFormatada;
-}
-
 function contador() {
   const localStorageInfos = JSON.parse(localStorage.getItem("infoAcessos"));
   console.log(localStorageInfos);
